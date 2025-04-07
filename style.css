@@ -144,7 +144,7 @@ nav ul li a:hover::after {
 /* --- Servicios --- */
 .servicios {
     padding: 5rem 5%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -262,58 +262,10 @@ nav ul li a:hover::after {
     left: 0;
 }
 
-/* --- Testimonios --- */
-.testimonios {
-    padding: 5rem 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.grid-testimonios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.tarjeta-testimonio {
-    background: var(--blanco);
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: var(--sombra);
-}
-
-.tarjeta-testimonio .estrellas {
-    color: #ffc107;
-    margin-bottom: 1rem;
-}
-
-.tarjeta-testimonio p {
-    font-style: italic;
-    margin-bottom: 1.5rem;
-    color: #555;
-}
-
-.autor-testimonio {
-    display: flex;
-    align-items: center;
-}
-
-.autor-testimonio img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 1rem;
-}
-
-.nombre-autor {
-    font-weight: 700;
-    color: var(--color-primario);
-}
 
 /* --- Contacto --- */
 .contacto {
-    background: linear-gradient(rgba(42, 92, 151, 0.9), rgba(42, 92, 151, 0.9)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3');
+    background: linear-gradient(#8a4d4d, #880f0f), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3');
     background-size: cover;
     background-position: center;
     color: var(--blanco);
