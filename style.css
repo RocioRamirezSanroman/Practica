@@ -1,8 +1,8 @@
 :root {
-    --color-primario: #a61010;
-    --color-secundario: #880f0f;
+    --color-primario: #2E5A88;
+    --color-secundario: #87CEEB;
     --color-texto: #333;
-    --color-fondo: #e2d8d9;
+    --color-fondo: #F5F5F5;
     --blanco: #f3eded;
     --sombra: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -103,7 +103,7 @@ nav ul li a:hover::after {
 
 /* --- Hero --- */
 .hero {
-    background: linear-gradient(rgba(193, 212, 233, 0.8), rgba(42, 92, 151, 0.8)), url('https://de.cdn-website.com/968776d9879d4cec8b73e9214cd6007f/DESKTOP/jpg/139303707_l-min.jpg');
+    background: linear-gradient(rgba(193, 212, 233, 0.8), rgba(80, 96, 114, 0.8)), url('https://de.cdn-website.com/968776d9879d4cec8b73e9214cd6007f/DESKTOP/jpg/139303707_l-min.jpg');
     background-size: cover;
     background-position: center;
     color: var(--blanco);
@@ -265,7 +265,7 @@ nav ul li a:hover::after {
 
 /* --- Contacto --- */
 .contacto {
-    background: linear-gradient(#8a4d4d, #880f0f), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3');
+    background: linear-gradient(#2E5A88, #2E5A88), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3');
     background-size: cover;
     background-position: center;
     color: var(--blanco);
