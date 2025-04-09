@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FisioCenter - Inicio</title>
+    <title>FisioCenter - Terapia y Rehabilitación Profesional</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="./Icono.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Flotante con Menú -->
     <header>
         <div class="container header-container">
             <div class="logo">
                 <i class="fas fa-hands-helping"></i>
-                <span>IvanLoraFisio</span>
+                <span>FisioCenter</span>
             </div>
             <nav>
                 <ul>
@@ -21,47 +22,167 @@
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contacto.html" class="btn-nav">Cita Online</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="container" id="inicio">
-        <br><br><br><br><br>
-        <h1>Fisioterapia en Cádiz</h1>
-        <p>¿Buscas una clínica de fisioterapia en La Barca de la Florida? 
-            Si es así, pide tu cita previa en nuestra empresa. En Iván Lora Pozo Fisioterapia contamos con profesionales del sector y 
-            con recursos materiales para atenderte con todas las garantías. Estamos en La Barca de la Florida y Jerez de la Frontera.</p>
-
-    </section>
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-user-md"></i>
-                    <h3>Fisioterapia</h3>
-                    <p>Con la fisioterapia conseguimos prevenir, mantener y recuperar la funcionalidad 
-                        de nuestro cuerpo mediante una acción que tiene un doble beneficio.</p>
+    <!-- Hero Section Mejorada -->
+    <section class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="videos/fisio-hero.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>Recupera tu <span class="highlight">movilidad</span> y <span class="highlight">calidad de vida</span></h1>
+            <p class="hero-subtitle">Terapias personalizadas con tecnología avanzada y un enfoque humano</p>
+            <div class="hero-buttons">
+                <a href="servicios.html" class="btn btn-primary">Nuestros Tratamientos</a>
+                <a href="contacto.html" class="btn btn-secondary">
+                    <i class="fas fa-calendar-alt"></i> Reservar Cita
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1500">0</div>
+                    <div class="stat-label">Pacientes atendidos</div>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Podología</h3>
-                    <p>Llevamos muchos años en este sector, por lo que sabemos qué soluciones
-                         pueden necesitar nuestros clientes en materia de podología. </p>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="95">0</div>
+                    <div class="stat-label">% Satisfacción</div>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-clinic-medical"></i>
-                    <h3>Instalaciones Modernas</h3>
-                    <p>Contamos con la mejor tecnología para tu rehabilitación.</p>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Años de experiencia</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Sección de Beneficios -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>En FisioCenter encontrarás</h2>
+                <p>Un enfoque integral para tu recuperación y bienestar</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expertos Certificados</h3>
+                    <p>Fisioterapeutas con especialización en diferentes áreas terapéuticas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Diagnóstico Preciso</h3>
+                    <p>Tecnología de última generación para una evaluación exacta.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Planes Personalizados</h3>
+                    <p>Tratamientos adaptados a tus necesidades específicas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Instalaciones Modernas</h3>
+                    <p>Ambientes diseñados para tu comodidad y recuperación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que dicen nuestros pacientes</h2>
+                <p>Experiencias reales de personas que recuperaron su bienestar</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Después de mi operación de rodilla, en FisioCenter me ayudaron a recuperar la movilidad completa. Su enfoque personalizado hizo toda la diferencia.</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonio1.jpg" alt="Carlos M." class="author-img">
+                            <div class="author-info">
+                                <h4>Carlos M.</h4>
+                                <p>Paciente post-quirúrgico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Más testimonios aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA (Call to Action) -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para comenzar tu camino a la recuperación?</h2>
+                <p>Reserva tu evaluación inicial sin costo hoy mismo</p>
+                <a href="contacto.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-phone-alt"></i> Llámanos o Escríbenos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 FisioCenter. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <div class="logo">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>FisioCenter</span>
+                    </div>
+                    <p>Centro especializado en fisioterapia y rehabilitación con más de 15 años de experiencia ayudando a nuestros pacientes.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Salud 1234, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@fisiocenter.com</p>
+                    <p><i class="fas fa-clock"></i> L-V: 8:00 - 20:00</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FisioCenter. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
