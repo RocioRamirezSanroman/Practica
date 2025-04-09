@@ -1,0 +1,122 @@
+:root {
+    --azul-profesional: #2E5A88;
+    --azul-claro: #87CEEB;
+    --azul-turquesa: #40E0D0;
+    --blanco: #FFFFFF;
+    --gris-claro: #F8F9FA;
+    --texto-oscuro: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--gris-claro);
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Estilos comunes para todas las páginas */
+header {
+    background-color: var(--azul-profesional);
+    color: var(--blanco);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: var(--azul-turquesa);
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--azul-turquesa);
+}
+
+/* Estilos específicos para cada página */
+.page-header {
+    background: linear-gradient(rgba(46, 90, 136, 0.8), rgba(46, 90, 136, 0.8)), 
+                url('../img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 68px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: var(--azul-profesional);
+    color: var(--blanco);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+    }
+    
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+}
