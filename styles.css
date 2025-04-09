@@ -332,6 +332,67 @@ nav ul li a:hover {
     z-index: 2;
 }
 
+/* --- Servicios --- */
+.servicios {
+    padding: 5rem 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.titulo-seccion h2 {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.titulo-seccion h1 {
+    font-size: 2.5rem;
+    color: #98a6c4;
+    margin-bottom: 1rem;
+}
+
+
+.titulo-seccion p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta-servicio {
+    background: var(--blanco);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta-servicio i {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    margin-bottom: 1.5rem;
+}
+
+.tarjeta-servicio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primario);
+}
 /* Sección CTA */
 .cta-section {
     padding: 6rem 0;
