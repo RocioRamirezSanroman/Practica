@@ -339,6 +339,10 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+.service-details{
+    margin: 7%;
+}
+
 .titulo-seccion {
     text-align: center;
     margin-bottom: 4rem;
