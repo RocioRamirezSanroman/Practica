@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FisioCenter - Servicios</title>
+    <title>Nuestros Servicios - FisioCenter</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Flotante con Menú -->
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -20,55 +22,203 @@
                     <li><a href="servicios.html" class="active">Servicios</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contacto.html" class="btn-nav">Cita Online</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="page-header">
+    <!-- Hero Section para Servicios -->
+    <section class="hero" style="height: 60vh;">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="videos/fisio-hero.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>Nuestros <span class="highlight">Servicios</span> Profesionales</h1>
+            <p class="hero-subtitle">Terapias especializadas para cada necesidad, con los más altos estándares de calidad</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios Detallados -->
+    <section class="benefits" style="padding: 4rem 0;">
         <div class="container">
-            <h1>Nuestros Servicios</h1>
-            <p>Descubre nuestra amplia gama de tratamientos especializados</p>
+            <div class="section-header">
+                <h2>Tratamientos Especializados</h2>
+                <p>Descubre nuestra amplia gama de servicios terapéuticos</p>
+            </div>
+
+            <div class="service-details">
+                <!-- Servicio 1 -->
+                <div class="service-card animate">
+                    <div class="service-image">
+                        <img src="images/fisioterapia-deportiva.jpg" alt="Fisioterapia Deportiva">
+                    </div>
+                    <div class="service-content">
+                        <h3>Fisioterapia Deportiva</h3>
+                        <p>Tratamientos especializados para deportistas profesionales y amateurs. Prevención y recuperación de lesiones deportivas como esguinces, tendinitis, roturas fibrilares y sobrecargas musculares.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Rehabilitación post-lesional</li>
+                            <li><i class="fas fa-check-circle"></i> Vendajes funcionales</li>
+                            <li><i class="fas fa-check-circle"></i> Preparación física específica</li>
+                            <li><i class="fas fa-check-circle"></i> Técnicas de recuperación activa</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-primary" style="margin-top: 1.5rem;">Reservar Consulta</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="service-card animate delay-1" style="flex-direction: row-reverse;">
+                    <div class="service-image">
+                        <img src="images/rehabilitacion-postquirurgica.jpg" alt="Rehabilitación Postquirúrgica">
+                    </div>
+                    <div class="service-content">
+                        <h3>Rehabilitación Postquirúrgica</h3>
+                        <p>Programas personalizados para recuperar la movilidad y funcionalidad después de intervenciones quirúrgicas como prótesis, artroscopias, cirugías de columna o reparaciones tendinosas.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Recuperación de amplitud articular</li>
+                            <li><i class="fas fa-check-circle"></i> Fortalecimiento muscular progresivo</li>
+                            <li><i class="fas fa-check-circle"></i> Control del dolor postoperatorio</li>
+                            <li><i class="fas fa-check-circle"></i> Reeducación de la marcha</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-primary" style="margin-top: 1.5rem;">Reservar Consulta</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="service-card animate delay-2">
+                    <div class="service-image">
+                        <img src="images/terapia-manual.jpg" alt="Terapia Manual">
+                    </div>
+                    <div class="service-content">
+                        <h3>Terapia Manual Ortopédica</h3>
+                        <p>Técnicas manuales avanzadas para el tratamiento de disfunciones musculoesqueléticas, problemas de columna, alteraciones posturales y patologías articulares.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Osteopatía estructural</li>
+                            <li><i class="fas fa-check-circle"></i> Movilizaciones articulares</li>
+                            <li><i class="fas fa-check-circle"></i> Manipulaciones vertebrales</li>
+                            <li><i class="fas fa-check-circle"></i> Técnicas de liberación fascial</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-primary" style="margin-top: 1.5rem;">Reservar Consulta</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="service-card animate delay-3" style="flex-direction: row-reverse;">
+                    <div class="service-image">
+                        <img src="images/punccion-seca.jpg" alt="Punción Seca">
+                    </div>
+                    <div class="service-content">
+                        <h3>Punción Seca y Electrólisis</h3>
+                        <p>Técnicas invasivas para el tratamiento de puntos gatillo y tendinopatías, combinadas con tecnología de última generación para una recuperación más rápida y efectiva.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Punción seca superficial y profunda</li>
+                            <li><i class="fas fa-check-circle"></i> Electrólisis percutánea (EPTE)</li>
+                            <li><i class="fas fa-check-circle"></i> Ecoguiada para mayor precisión</li>
+                            <li><i class="fas fa-check-circle"></i> Combinación con ejercicio terapéutico</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-primary" style="margin-top: 1.5rem;">Reservar Consulta</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="servicios" id="servicios">
-        <div class="titulo-seccion">
-            <h2>Podología profesional</h2>
-            <p>Llevamos muchos años en este sector, por lo que sabemos qué soluciones pueden necesitar 
-                nuestros clientes en materia de podología.</p>
-        </div>
-        <div class="grid-servicios">
-            <div class="tarjeta-servicio">
-                <i class="fas fa-bone"></i>
-                <h3>Estudio de la pisada</h3>
-                <p>Realizamos un análisis exhaustivo para identificar anomalías en los pies 
-                    y determinar las plantillas necesarias para caminar o entrenar.</p>
+    <!-- Sección de Tecnología -->
+    <section class="testimonials" style="background-color: var(--blanco);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tecnología de Vanguardia</h2>
+                <p>Equipos avanzados para potenciar tu recuperación</p>
             </div>
-            <div class="tarjeta-servicio">
-                <i class="fas fa-user-injured"></i>
-                <h3>Estudio biomecánico</h3>
-                <p>Contáctanos para realizar un servicio que utiliza tecnología avanzada, diagnosticando dolencias en el pie y ofreciendo soluciones para caminar o entrenar sin dolor.</p>
-            </div>
-            <div class="tarjeta-servicio">
-                <i class="fas fa-child"></i>
-                <h3>Plantillas biomecánicas y deportivas personalizadas.</h3>
-                <p>Nos especializamos en diseñar plantillas deportivas que se adaptan a la fisionomía del pie, mejorando la comodidad y sensación durante cualquier actividad deportiva donde los pies son esenciales.
-                </p>
-            </div>
-            <div class="tarjeta-servicio">
-                <i class="fas fa-thermometer-half"></i>
-                <h3>Análisis de la marcha</h3>
-                <p>Contamos con máquinas avanzadas para analizar la marcha de los pacientes, identificar su dolor y ofrecer soluciones, ayudando a resolver problemas como la fascitis plantar.
-                </p>
+            <div class="technology-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Láser de Alta Potencia</h3>
+                    <p>Terapia fotodinámica para acelerar la regeneración tisular y reducir procesos inflamatorios.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electroterapia Avanzada</h3>
+                    <p>Equipos de última generación para analgesia, estimulación muscular y regeneración nerviosa.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3>Plataforma Vibratoria</h3>
+                    <p>Tecnología para mejorar la propiocepción, densidad ósea y fuerza muscular.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Hidroterapia</h3>
+                    <p>Piscina terapéutica con sistema de contracorriente para rehabilitación en descarga.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Sección CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Necesitas asesoramiento sobre qué tratamiento es mejor para ti?</h2>
+                <p>Nuestros especialistas están listos para evaluar tu caso y recomendarte la mejor opción</p>
+                <a href="contacto.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-calendar-alt"></i> Solicitar Evaluación Inicial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 FisioCenter. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <div class="logo">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>FisioCenter</span>
+                    </div>
+                    <p>Centro especializado en fisioterapia y rehabilitación con más de 15 años de experiencia ayudando a nuestros pacientes.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Salud 1234, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@fisiocenter.com</p>
+                    <p><i class="fas fa-clock"></i> L-V: 8:00 - 20:00</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FisioCenter. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
