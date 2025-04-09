@@ -2,9 +2,9 @@
     --color-primario: #2E5A88;
     --color-secundario: #87CEEB;
     --color-texto: #333;
-    --color-fondo: #F5F5F5;
+    --color-fondo: #F8F9FA ;
     --blanco: #f3eded;
-    --sombra: 0 5px 15px rgba(0,0,0,0.1);
+    --sombra: 0 5px 15px #bbc6eb;
 }
 
 * {
@@ -19,6 +19,10 @@ body {
     color: var(--color-texto);
     background-color: var(--blanco);
     overflow-x: hidden;
+    border-width: 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    margin: 8px;
 }
 
 /* --- Header/Nav --- */
@@ -41,7 +45,7 @@ header {
 
 .logo {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--color-primario);
     text-decoration: none;
 }
@@ -133,7 +137,7 @@ nav ul li a:hover::after {
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(62, 53, 197, 0.2);
 }
 
 .btn-hero:hover {
@@ -158,6 +162,13 @@ nav ul li a:hover::after {
     color: var(--color-primario);
     margin-bottom: 1rem;
 }
+
+.titulo-seccion h1 {
+    font-size: 2.5rem;
+    color: #98a6c4;
+    margin-bottom: 1rem;
+}
+
 
 .titulo-seccion p {
     color: #666;
