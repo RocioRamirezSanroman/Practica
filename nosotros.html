@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FisioCenter - Nosotros</title>
+    <title>Sobre Nosotros - FisioCenter</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Flotante con Menú -->
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -20,35 +22,256 @@
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="nosotros.html" class="active">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="contacto.html" class="btn-nav">Cita Online</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="page-header">
+    <!-- Hero Section para Nosotros -->
+    <section class="hero" style="height: 60vh;">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="videos/fisio-hero.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>Nuestra <span class="highlight">Pasión</span> por tu <span class="highlight">Bienestar</span></h1>
+            <p class="hero-subtitle">Más de 15 años dedicados a la excelencia en fisioterapia y rehabilitación</p>
+        </div>
+    </section>
+
+    <!-- Sección Nuestra Historia -->
+    <section class="benefits" style="background-color: var(--gris-claro); padding: 5rem 0;">
         <div class="container">
-            <h1>Sobre Nosotros</h1>
-            <p>Conoce nuestra historia y filosofía de trabajo</p>
+            <div class="about-section">
+                <div class="about-content animate">
+                    <h2>Nuestra Historia</h2>
+                    <p>FisioCenter nació en 2008 con la visión de crear un espacio donde la fisioterapia de calidad se combinara con un trato humano y personalizado. Lo que comenzó como una pequeña consulta con dos profesionales hoy es un centro de referencia en la región.</p>
+                    <p>Nuestro crecimiento ha sido orgánico, siempre guiado por el compromiso con nuestros pacientes y la búsqueda constante de la excelencia clínica. Cada año incorporamos nuevas tecnologías y técnicas, pero sin perder nunca nuestra esencia: tratar a cada persona como nos gustaría ser tratados.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Años de experiencia</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Especialistas en equipo</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1500+</div>
+                            <div class="stat-label">Pacientes satisfechos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate delay-1">
+                    <img src="images/clinica-exterior.jpg" alt="Nuestra clínica">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="about">
-        <div class="container about-container">
-            <div class="about-content">
-                <h2>Nuestra Historia</h2>
-                <p>Fundada en 2010, FisioCenter nació con el objetivo de revolucionar la fisioterapia en nuestra región.</p>
-                <!-- Más contenido -->
+    <!-- Sección Nuestro Equipo -->
+    <section class="benefits" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conoce a Nuestro Equipo</h2>
+                <p>Profesionales altamente cualificados comprometidos con tu recuperación</p>
             </div>
-            <div class="about-img">
-                <img src="img/nosotros.jpg" alt="Equipo FisioCenter">
+            <div class="team-grid">
+                <!-- Profesional 1 -->
+                <div class="team-card animate">
+                    <div class="team-image">
+                        <img src="images/doctor1.jpg" alt="Dr. Javier Martínez">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Javier Martínez</h3>
+                        <p class="team-specialty">Fisioterapeuta especialista en deporte</p>
+                        <p class="team-bio">Más de 20 años de experiencia trabajando con atletas de élite. Especializado en recuperación de lesiones deportivas.</p>
+                    </div>
+                </div>
+                
+                <!-- Profesional 2 -->
+                <div class="team-card animate delay-1">
+                    <div class="team-image">
+                        <img src="images/doctor2.jpg" alt="Dra. Ana López">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dra. Ana López</h3>
+                        <p class="team-specialty">Especialista en terapia manual y columna</p>
+                        <p class="team-bio">Experta en osteopatía y problemas de espalda. Autora de varios estudios sobre rehabilitación vertebral.</p>
+                    </div>
+                </div>
+                
+                <!-- Profesional 3 -->
+                <div class="team-card animate delay-2">
+                    <div class="team-image">
+                        <img src="images/doctor3.jpg" alt="Dr. Carlos Ruiz">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Carlos Ruiz</h3>
+                        <p class="team-specialty">Experto en rehabilitación postquirúrgica</p>
+                        <p class="team-bio">Especializado en recuperación de prótesis y cirugías traumatológicas. Formado en las mejores clínicas de Europa.</p>
+                    </div>
+                </div>
+                
+                <!-- Profesional 4 -->
+                <div class="team-card animate delay-3">
+                    <div class="team-image">
+                        <img src="images/doctor4.jpg" alt="Dra. Marta Sánchez">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dra. Marta Sánchez</h3>
+                        <p class="team-specialty">Fisioterapeuta neurológica y pediátrica</p>
+                        <p class="team-bio">Especialista en neurología y atención temprana. Amplia experiencia en pacientes con daño cerebral.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Sección Nuestros Valores -->
+    <section class="testimonials" style="background-color: var(--azul-oscuro); color: var(--blanco);">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: var(--blanco);">Nuestros Valores</h2>
+                <p>Los principios que guían nuestro trabajo cada día</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Excelencia Clínica</h3>
+                    <p>Nos mantenemos actualizados con las últimas técnicas y evidencias científicas para ofrecer los mejores tratamientos.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Enfoque Humano</h3>
+                    <p>Escuchamos y comprendemos a cada paciente para diseñar tratamientos personalizados que realmente funcionen.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Compromiso</h3>
+                    <p>Nos implicamos al 100% con cada caso, acompañándote en todo tu proceso de recuperación.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Profesionalidad</h3>
+                    <p>Mantenemos los más altos estándares éticos y de calidad en todos nuestros tratamientos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Instalaciones -->
+    <section class="benefits" style="padding: 5rem 0; background-color: var(--blanco);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestras Instalaciones</h2>
+                <p>Un espacio diseñado para tu comodidad y recuperación</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-main animate">
+                    <img src="images/sala-terapias.jpg" alt="Sala de terapias">
+                </div>
+                <div class="gallery-thumbs">
+                    <div class="thumb-item animate delay-1">
+                        <img src="images/sala-electroterapia.jpg" alt="Sala de electroterapia">
+                    </div>
+                    <div class="thumb-item animate delay-2">
+                        <img src="images/sala-ejercicio.jpg" alt="Sala de ejercicio terapéutico">
+                    </div>
+                    <div class="thumb-item animate delay-3">
+                        <img src="images/recepcion.jpg" alt="Recepción">
+                    </div>
+                </div>
+            </div>
+            <div class="facilities-description animate">
+                <p>Nuestro centro cuenta con más de 400m² distribuidos en amplias salas de tratamiento, zona de ejercicio terapéutico, área de electroterapia y piscina de hidroterapia. Todas nuestras instalaciones cumplen con los más estrictos protocolos de higiene y seguridad, y están diseñadas para crear un ambiente acogedor que favorezca tu recuperación.</p>
+                <a href="contacto.html" class="btn btn-primary" style="margin-top: 2rem;">
+                    <i class="fas fa-calendar-alt"></i> Visítanos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Quieres conocernos personalmente?</h2>
+                <p>Agenda una visita sin compromiso y descubre cómo podemos ayudarte</p>
+                <a href="contacto.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-map-marker-alt"></i> Solicitar Visita
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 FisioCenter. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <div class="logo">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>FisioCenter</span>
+                    </div>
+                    <p>Centro especializado en fisioterapia y rehabilitación con más de 15 años de experiencia ayudando a nuestros pacientes.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Salud 1234, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@fisiocenter.com</p>
+                    <p><i class="fas fa-clock"></i> L-V: 8:00 - 20:00</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FisioCenter. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
