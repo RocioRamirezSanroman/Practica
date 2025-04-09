@@ -204,57 +204,65 @@ nav ul li a.active::after {
 }
 
 /* Sección Servicios */
-.services {
-    padding: 5rem 0;
-    background-color: var(--blanco);
+.servicios {
+    padding: 5rem 5%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.section-title {
+.titulo-seccion {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
-.section-title h2 {
+.titulo-seccion h2 {
     font-size: 2.5rem;
-    color: var(--azul-profesional);
+    color: var(--color-primario);
     margin-bottom: 1rem;
 }
 
-.section-title p {
-    color: var(--texto-gris);
+.titulo-seccion h1 {
+    font-size: 2.5rem;
+    color: #98a6c4;
+    margin-bottom: 1rem;
+}
+
+
+.titulo-seccion p {
+    color: #666;
     max-width: 700px;
     margin: 0 auto;
 }
 
-.services-grid {
+.grid-servicios {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.service-card {
-    background-color: var(--gris-claro);
+.tarjeta-servicio {
+    background: var(--blanco);
     border-radius: 10px;
     padding: 2rem;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s;
     text-align: center;
-    transition: all 0.3s;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.tarjeta-servicio:hover {
+    transform: translateY(-10px);
 }
 
-.service-card i {
-    font-size: 3rem;
-    color: var(--azul-profesional);
+.tarjeta-servicio i {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
     margin-bottom: 1.5rem;
 }
 
-.service-card h3 {
+.tarjeta-servicio h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--azul-profesional);
+    color: var(--color-primario);
 }
 
 /* Sección Nosotros */
