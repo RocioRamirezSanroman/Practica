@@ -1,12 +1,17 @@
+/* styles.css - Archivo CSS compartido por todas las páginas */
+
 :root {
     --azul-profesional: #2E5A88;
     --azul-claro: #87CEEB;
     --azul-turquesa: #40E0D0;
     --blanco: #FFFFFF;
     --gris-claro: #F8F9FA;
+    --gris-medio: #E9ECEF;
     --texto-oscuro: #333333;
+    --texto-gris: #6C757D;
 }
 
+/* Reset y estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +25,11 @@ body {
     line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -27,7 +37,7 @@ body {
     padding: 0 15px;
 }
 
-/* Estilos comunes para todas las páginas */
+/* Header - Común a todas las páginas */
 header {
     background-color: var(--azul-profesional);
     color: var(--blanco);
@@ -71,6 +81,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    position: relative;
 }
 
 nav ul li a:hover,
@@ -78,18 +89,44 @@ nav ul li a.active {
     color: var(--azul-turquesa);
 }
 
-/* Estilos específicos para cada página */
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--azul-turquesa);
+}
+
+/* Hero/Página header - Estilo común */
+.hero,
 .page-header {
     background: linear-gradient(rgba(46, 90, 136, 0.8), rgba(46, 90, 136, 0.8)), 
-                url('../img/header-bg.jpg');
+                url('../img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
     color: var(--blanco);
+    margin-top: 68px; /* Compensa el header fixed */
+}
+
+.page-header {
+    height: 300px;
     margin-top: 68px;
+}
+
+.hero-content,
+.page-header div {
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .page-header h1 {
@@ -97,16 +134,278 @@ nav ul li a.active {
     margin-bottom: 1rem;
 }
 
-/* Estilos del footer */
+.hero p,
+.page-header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: var(--azul-turquesa);
+    color: var(--blanco);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: 2px solid var(--azul-turquesa);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--azul-turquesa);
+}
+
+.btn-small {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Sección Features (Inicio) */
+.features {
+    padding: 5rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background-color: var(--blanco);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--azul-profesional);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--azul-profesional);
+}
+
+/* Sección Servicios */
+.services {
+    padding: 5rem 0;
+    background-color: var(--blanco);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--azul-profesional);
+    margin-bottom: 1rem;
+}
+
+.section-title p {
+    color: var(--texto-gris);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: var(--gris-claro);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--azul-profesional);
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--azul-profesional);
+}
+
+/* Sección Nosotros */
+.about {
+    padding: 5rem 0;
+    background-color: var(--gris-claro);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: var(--azul-profesional);
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    color: var(--texto-gris);
+}
+
+/* Sección Contacto */
+.contact {
+    padding: 5rem 0;
+    background-color: var(--blanco);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: var(--azul-profesional);
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    color: var(--azul-turquesa);
+    margin-right: 10px;
+    width: 25px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Footer - Común a todas las páginas */
 footer {
     background-color: var(--azul-profesional);
     color: var(--blanco);
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
-    margin-top: 3rem;
 }
 
-/* Estilos responsive */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: var(--blanco);
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: var(--azul-turquesa);
+}
+
+.social-icons a {
+    color: var(--blanco);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--azul-turquesa);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Estilos Responsive */
+@media (max-width: 992px) {
+    .about-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-img {
+        order: -1;
+    }
+}
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -118,5 +417,29 @@ footer {
     
     nav ul li {
         margin: 0 0.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero,
+    .page-header {
+        height: auto;
+        padding: 6rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
     }
 }
