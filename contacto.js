@@ -38,19 +38,7 @@ const contactData = {
                 label: 'Teléfono',
                 required: false
             },
-            {
-                type: 'select',
-                id: 'service',
-                label: 'Servicio de interés',
-                options: [
-                    { value: '', text: 'Selecciona un servicio' },
-                    { value: 'fisioterapia-deportiva', text: 'Fisioterapia Deportiva' },
-                    { value: 'rehabilitacion-postquirurgica', text: 'Rehabilitación Postquirúrgica' },
-                    { value: 'terapia-manual', text: 'Terapia Manual' },
-                    { value: 'puncion-seca', text: 'Punción Seca' },
-                    { value: 'otros', text: 'Otros' }
-                ]
-            },
+         
             {
                 type: 'textarea',
                 id: 'message',
