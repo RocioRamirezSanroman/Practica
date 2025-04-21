@@ -3,58 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FisioCenter - Contacto</title>
+    <title>Contacto - FisioCenter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <i class="fas fa-hands-helping"></i>
-                <span>FisioCenter</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html" class="active">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Header -->
+    <header id="main-header">
+        <!-- El contenido del header se carga dinámicamente con JS -->
     </header>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>Contacto</h1>
-            <p>Estamos aquí para ayudarte</p>
+    <!-- Hero Section -->
+    <section class="hero contact-hero">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="videos/fisio-hero.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>Estamos para <span class="highlight">ayudarte</span></h1>
+            <p class="hero-subtitle">Contáctanos para resolver tus dudas o reservar tu cita</p>
         </div>
     </section>
 
-    <section class="contact">
-        <div class="container contact-container">
-            <div class="contact-info">
-                <h2>Información de contacto</h2>
-                <p><i class="fas fa-map-marker-alt"></i> Calle Terapia 123, Ciudad</p>
-                <p><i class="fas fa-phone"></i> +34 123 456 789</p>
-                <p><i class="fas fa-envelope"></i> info@fisiocenter.com</p>
+    <!-- Main Contact Content -->
+    <main class="contact-main">
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-container">
+                    <!-- Formulario de Contacto -->
+                    <div class="contact-form animate">
+                        <h2>Envíanos un mensaje</h2>
+                        <p>Completa el formulario y te responderemos a la brevedad</p>
+                        
+                        <form id="contactForm">
+                            <!-- Campos del formulario se cargan dinámicamente con JS -->
+                        </form>
+                    </div>
+                    
+                    <!-- Información de Contacto -->
+                    <div class="contact-info animate delay-1">
+                        <h2>Información de contacto</h2>
+                        <p>Estamos disponibles para atenderte en nuestro horario habitual o mediante cita previa.</p>
+                        
+                        <div class="contact-details" id="contactDetails">
+                            <!-- Detalles de contacto se cargan dinámicamente con JS -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-form">
-                <form>
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Tu mensaje" required></textarea>
-                    <button type="submit" class="btn">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 FisioCenter. Todos los derechos reservados.</p>
-        </div>
+        <!-- Mapa de Ubicación -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-container animate">
+                    <iframe id="locationMap" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación de FisioCenter"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Cita Rápida -->
+        <section class="quick-appointment-section">
+            <div class="container">
+                <div class="quick-appointment">
+                    <div class="quick-appointment-content animate">
+                        <h2>Reserva tu cita rápidamente</h2>
+                        <p>Utiliza nuestro sistema de citas online para seleccionar el día y hora que mejor te convengan.</p>
+                        <ul class="appointment-features">
+                            <!-- Características se cargan dinámicamente con JS -->
+                        </ul>
+                    </div>
+                    <div class="quick-appointment-form animate delay-1">
+                        <form id="quickAppointment">
+                            <!-- Campos del formulario se cargan dinámicamente con JS -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preguntas frecuentes</h2>
+                    <p>Resolvemos tus dudas más comunes</p>
+                </div>
+                
+                <div class="faq-container" id="faqContainer">
+                    <!-- Preguntas se cargan dinámicamente con JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <!-- El contenido del footer se carga dinámicamente con JS -->
     </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="contacto.js"></script>
 </body>
 </html>
