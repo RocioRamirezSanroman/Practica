@@ -67,46 +67,7 @@ function loadHeader() {
     `;
 }
 
-// Función para cargar el footer
-function loadFooter() {
-    const footer = document.getElementById('main-footer');
-    
-    footer.innerHTML = `
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section about">
-                    <div class="logo">
-                        <i class="${legalData.footer.logo.icon}"></i>
-                        <span>${legalData.footer.logo.text}</span>
-                    </div>
-                    <p>${legalData.footer.description}</p>
-                    <div class="social-icons">
-                        ${legalData.footer.socialLinks.map(link => `
-                            <a href="${link.url}"><i class="${link.icon}"></i></a>
-                        `).join('')}
-                    </div>
-                </div>
-                <div class="footer-section links">
-                    <h3>Enlaces Rápidos</h3>
-                    <ul>
-                        ${legalData.footer.quickLinks.map(link => `
-                            <li><a href="${link.url}">${link.text}</a></li>
-                        `).join('')}
-                    </ul>
-                </div>
-                <div class="footer-section contact">
-                    <h3>Contacto</h3>
-                    ${legalData.footer.contactInfo.map(info => `
-                        <p><i class="${info.icon}"></i> ${info.text}</p>
-                    `).join('')}
-                </div>
-            </div>
-            <div class="copyright">
-                <p>${legalData.footer.copyright}</p>
-            </div>
-        </div>
-    `;
-}
+
 
 // Función principal para cargar la página
 function loadLegalPage() {
