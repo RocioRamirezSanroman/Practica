@@ -1,0 +1,331 @@
+/* Estilos específicos para la página de contacto */
+.contact-hero {
+    height: 50vh;
+}
+
+/* Contact Form Section */
+.contact-container {
+    display: flex;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: var(--blanco);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+}
+
+.contact-form h2 {
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+}
+
+.contact-form p {
+    color: var(--texto-gris);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--azul-oscuro);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--gris-medio);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transicion);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--azul-turquesa);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(64, 224, 208, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-group input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--gris-claro);
+    border-radius: 15px;
+}
+
+.contact-info h2 {
+    color: var(--azul-oscuro);
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    color: var(--texto-gris);
+    margin-bottom: 2rem;
+}
+
+.contact-details {
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--azul-turquesa);
+    color: var(--azul-oscuro);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.contact-text h3 {
+    color: var(--azul-oscuro);
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.contact-text p {
+    color: var(--texto-gris);
+    margin-bottom: 0.2rem;
+    font-size: 0.95rem;
+}
+
+.social-contact {
+    margin-top: 2rem;
+}
+
+.social-contact h3 {
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+}
+
+.social-contact .social-icons {
+    justify-content: flex-start;
+}
+
+/* Map Section */
+.map-section {
+    background-color: var(--gris-claro);
+    padding: 3rem 0;
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+}
+
+/* Quick Appointment Section */
+.quick-appointment-section {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 5rem 0;
+}
+
+.quick-appointment {
+    display: flex;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.quick-appointment-content {
+    flex: 1;
+}
+
+.quick-appointment-content h2 {
+    color: var(--blanco);
+    margin-bottom: 1.5rem;
+}
+
+.quick-appointment-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+
+.appointment-features {
+    list-style: none;
+}
+
+.appointment-features li {
+    color: var(--blanco);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.appointment-features i {
+    color: var(--azul-turquesa);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.quick-appointment-form {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.quick-appointment-form label {
+    color: var(--blanco);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.quick-appointment-form input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--blanco);
+    border-radius: 8px;
+}
+
+.quick-appointment-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.quick-appointment-form input:focus {
+    outline: none;
+    border-color: var(--azul-turquesa);
+    box-shadow: 0 0 0 3px rgba(64, 224, 208, 0.3);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 5rem 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid var(--gris-medio);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    background-color: var(--gris-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.faq-question:hover {
+    background-color: var(--gris-medio);
+}
+
+.faq-question h3 {
+    color: var(--azul-oscuro);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer.active {
+    padding: 0 1.5rem 1.5rem;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    color: var(--texto-gris);
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .quick-appointment {
+        flex-direction: column;
+    }
+    
+    .quick-appointment-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form,
+    .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .faq-question {
+        padding: 1rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
