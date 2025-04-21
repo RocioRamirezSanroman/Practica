@@ -77,12 +77,12 @@ const contactData = {
             {
                 icon: 'fas fa-map-marker-alt',
                 title: 'Dirección',
-                details: ['Av. Salud 1234, Ciudad', '2º piso, Consultorio 5']
+                details: ['Calle Cortes 16, 11570, La Barca de la Florida, Cádiz']
             },
             {
                 icon: 'fas fa-phone-alt',
                 title: 'Teléfonos',
-                details: ['+34 123 456 789', '+34 987 654 321']
+                details: ['+34 670 399 412']
             },
             {
                 icon: 'fas fa-envelope',
@@ -107,58 +107,7 @@ const contactData = {
         src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.12345678901234567!3d39.98765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU5JzE1LjYiTiAwwrAwNyczNi4xIlc!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses',
         title: 'Ubicación de FisioCenter'
     },
-    quickAppointment: {
-        title: 'Reserva tu cita rápidamente',
-        description: 'Utiliza nuestro sistema de citas online para seleccionar el día y hora que mejor te convengan.',
-        features: [
-            'Confirmación inmediata',
-            'Recordatorio por email/SMS',
-            'Modificación fácil',
-            'Sin esperas'
-        ],
-        formFields: [
-            {
-                type: 'text',
-                id: 'appointment-name',
-                label: 'Nombre*',
-                required: true
-            },
-            {
-                type: 'tel',
-                id: 'appointment-phone',
-                label: 'Teléfono*',
-                required: true
-            },
-            {
-                type: 'date',
-                id: 'appointment-date',
-                label: 'Fecha preferente*',
-                required: true
-            }
-        ],
-        submitButton: {
-            text: 'Reservar Cita',
-            icon: 'fas fa-calendar-check'
-        }
-    },
-    faqs: [
-        {
-            question: '¿Cómo sé si necesito fisioterapia?',
-            answer: 'Si experimentas dolor persistente, limitación de movimiento, molestias después de una cirugía o lesión, o simplemente quieres prevenir problemas musculares o articulares, la fisioterapia puede ayudarte. Puedes contactarnos para una evaluación inicial sin compromiso.'
-        },
-        {
-            question: '¿Necesito derivación médica?',
-            answer: 'No es necesaria derivación médica para acudir a nuestras consultas de fisioterapia privada. Sin embargo, si deseas acogerte a algún convenio con seguros médicos, te recomendamos consultar las condiciones específicas de tu póliza.'
-        },
-        {
-            question: '¿Qué debo llevar a mi primera sesión?',
-            answer: 'Recomendamos traer ropa cómoda que permita movilidad, cualquier informe médico o prueba diagnóstica relacionada con tu condición, y si usas plantillas ortopédicas o ayudas técnicas, tráelas también.'
-        },
-        {
-            question: '¿Tienen cancelación gratuita?',
-            answer: 'Sí, puedes cancelar o reprogramar tu cita sin coste alguno con al menos 24 horas de antelación. Para cancelaciones con menos tiempo, aplicamos una tarifa del 50% del importe de la sesión.'
-        }
-    ],
+
     footer: {
         logo: {
             icon: 'fas fa-hands-helping',
