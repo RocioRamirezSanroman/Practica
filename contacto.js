@@ -87,7 +87,7 @@ const contactData = {
             {
                 icon: 'fas fa-envelope',
                 title: 'Correo electrónico',
-                details: ['info@fisiocenter.com', 'citas@fisiocenter.com']
+                details: ['ivanlorafisioterapia@gmail.com']
             },
             {
                 icon: 'fas fa-clock',
@@ -95,16 +95,13 @@ const contactData = {
                 details: ['Lunes a Viernes: 8:00 - 20:00', 'Sábados: 9:00 - 14:00']
             }
         ],
-        socialTitle: 'Síguenos en redes',
+        socialTitle: '',
         socialLinks: [
-            { icon: 'fab fa-facebook-f', url: '#' },
-            { icon: 'fab fa-instagram', url: '#' },
-            { icon: 'fab fa-whatsapp', url: '#' },
-            { icon: 'fab fa-linkedin-in', url: '#' }
+           
         ]
     },
     map: {
-        src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.12345678901234567!3d39.98765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU5JzE1LjYiTiAwwrAwNyczNi4xIlc!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses',
+        src: 'https://www.google.com/maps/place/Ctra.+Cortes,+16,+11570+La+Barca+de+la+Florida,+C%C3%A1diz/@36.6492115,-5.9325225,911m/data=!3m1!1e3!4m6!3m5!1s0xd0dba8e5b64a75f:0xfb0b87251fd0c03b!8m2!3d36.6489187!4d-5.932509!16s%2Fg%2F11c19k3xfd?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoJLDEwMjExNjM5SAFQAw%3D%3D',
         title: 'Ubicación de FisioCenter'
     },
 
