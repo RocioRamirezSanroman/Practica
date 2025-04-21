@@ -1,0 +1,181 @@
+/* Estilos específicos para páginas legales (Aviso Legal, Política de Privacidad y Cookies) */
+.legal-hero {
+    height: 40vh;
+}
+
+.legal-main {
+    padding: 5rem 0;
+}
+
+.legal-section {
+    margin-bottom: 3rem;
+    background-color: var(--blanco);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    border-left: 4px solid var(--azul-turquesa);
+}
+
+.legal-section h2 {
+    color: var(--azul-oscuro);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.legal-section h3 {
+    color: var(--azul-oscuro);
+    margin: 2rem 0 1rem;
+    font-size: 1.3rem;
+}
+
+.legal-content {
+    color: var(--texto-gris);
+    line-height: 1.8;
+}
+
+.legal-content p {
+    margin-bottom: 1.5rem;
+}
+
+.legal-content ul {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.legal-content li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+}
+
+.legal-content li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 8px;
+    height: 8px;
+    background-color: var(--azul-turquesa);
+    border-radius: 50%;
+}
+
+/* Estilos para la tabla de cookies */
+.cookies-table {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.cookies-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.cookies-table th, .cookies-table td {
+    padding: 1rem;
+    border: 1px solid var(--gris-medio);
+    text-align: left;
+}
+
+.cookies-table th {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+.cookies-table tr:nth-child(even) {
+    background-color: var(--gris-claro);
+}
+
+.cookies-table tr:hover {
+    background-color: rgba(64, 224, 208, 0.1);
+}
+
+.cookies-table a {
+    color: var(--azul-turquesa);
+    text-decoration: none;
+    transition: var(--transicion);
+}
+
+.cookies-table a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-section {
+        padding: 1.5rem;
+    }
+    
+    .legal-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .legal-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .cookies-table th, 
+    .cookies-table td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .legal-hero {
+        height: 30vh;
+    }
+    
+    .legal-main {
+        padding: 3rem 0;
+    }
+    
+    .cookies-table {
+        display: block;
+    }
+    
+    .cookies-table table {
+        display: block;
+    }
+    
+    .cookies-table thead {
+        display: none;
+    }
+    
+    .cookies-table tbody {
+        display: block;
+    }
+    
+    .cookies-table tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid var(--gris-medio);
+        border-radius: 5px;
+    }
+    
+    .cookies-table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid var(--gris-medio);
+    }
+    
+    .cookies-table td:last-child {
+        border-bottom: none;
+    }
+    
+    .cookies-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        width: calc(50% - 1rem);
+        padding-right: 1rem;
+        font-weight: 600;
+        color: var(--azul-oscuro);
+        text-align: left;
+    }
+}
