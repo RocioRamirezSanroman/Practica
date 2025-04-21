@@ -3,7 +3,7 @@ const contactData = {
     header: {
         logo: {
             icon: 'fas fa-hands-helping',
-            text: 'FisioCenter'
+            text: 'IvánLoraFisio'
         },
         navLinks: [
             { text: 'Inicio', url: 'index.html', active: false },
@@ -102,13 +102,13 @@ const contactData = {
     },
     map: {
         src: 'https://www.google.com/maps/place/Ctra.+Cortes,+16,+11570+La+Barca+de+la+Florida,+C%C3%A1diz/@36.6492115,-5.9325225,911m/data=!3m1!1e3!4m6!3m5!1s0xd0dba8e5b64a75f:0xfb0b87251fd0c03b!8m2!3d36.6489187!4d-5.932509!16s%2Fg%2F11c19k3xfd?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoJLDEwMjExNjM5SAFQAw%3D%3D',
-        title: 'Ubicación de FisioCenter'
+        title: 'Ubicación de IvánLoraFisio'
     },
 
     footer: {
         logo: {
             icon: 'fas fa-hands-helping',
-            text: 'FisioCenter'
+            text: 'IvánLoraFisio'
         },
         description: 'Centro especializado en fisioterapia y rehabilitación con más de 15 años de experiencia ayudando a nuestros pacientes.',
         socialLinks: [
@@ -125,10 +125,10 @@ const contactData = {
         contactInfo: [
             { icon: 'fas fa-map-marker-alt', text: 'Av. Salud 1234, Ciudad' },
             { icon: 'fas fa-phone', text: '+34 123 456 789' },
-            { icon: 'fas fa-envelope', text: 'info@fisiocenter.com' },
+            { icon: 'fas fa-envelope', text: 'info@IvánLoraFisio.com' },
             { icon: 'fas fa-clock', text: 'L-V: 8:00 - 20:00' }
         ],
-        copyright: '© 2023 FisioCenter. Todos los derechos reservados.'
+        copyright: '© 2023 IvánLoraFisio. Todos los derechos reservados.'
     }
 };
 
