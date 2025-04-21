@@ -16,12 +16,6 @@
     border-left: 4px solid var(--azul-turquesa);
 }
 
-.legal-section h2 {
-    color: var(--azul-oscuro);
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-}
-
 .legal-content {
     color: var(--texto-gris);
     line-height: 1.8;
