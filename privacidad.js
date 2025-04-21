@@ -3,7 +3,7 @@ const legalData = {
     header: {
         logo: {
             icon: 'fas fa-hands-helping',
-            text: 'FisioCenter'
+            text: 'IvánLoraFisio'
         },
         navLinks: [
             { text: 'Inicio', url: 'index.html', active: false },
@@ -19,7 +19,7 @@ const legalData = {
     footer: {
         logo: {
             icon: 'fas fa-hands-helping',
-            text: 'FisioCenter'
+            text: 'IvánLoraFisio'
         },
         description: 'Centro especializado en fisioterapia y rehabilitación con más de 15 años de experiencia ayudando a nuestros pacientes.',
         socialLinks: [
@@ -38,10 +38,10 @@ const legalData = {
         contactInfo: [
             { icon: 'fas fa-map-marker-alt', text: 'Av. Salud 1234, Ciudad' },
             { icon: 'fas fa-phone', text: '+34 123 456 789' },
-            { icon: 'fas fa-envelope', text: 'info@fisiocenter.com' },
+            { icon: 'fas fa-envelope', text: 'info@IvánLoraFisio.com' },
             { icon: 'fas fa-clock', text: 'L-V: 8:00 - 20:00' }
         ],
-        copyright: '© 2023 FisioCenter. Todos los derechos reservados.'
+        copyright: '© 2023 IvánLoraFisio. Todos los derechos reservados.'
     }
 };
 
