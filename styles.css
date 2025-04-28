@@ -37,6 +37,7 @@ header {
     top: 0;
     z-index: 1000;
     transition: var(--transicion);
+    object-fit: cover;
 }
 
 .header-container {
@@ -100,7 +101,6 @@ nav ul li a:hover {
 
 /* Hero Section Mejorada */
 .hero {
-    padding-top: 10%;
     position: relative;
     height: 60vh;
     display: flex;
@@ -108,33 +108,12 @@ nav ul li a:hover {
     color: var(--blanco);
     margin-top: 0;
     overflow: hidden;
+    background-color: rgba(102, 124, 148, 0.9) ;
 }
 
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.hero-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(26, 58, 95, 0.6);
-}
 
 .hero-content {
+
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
