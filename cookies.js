@@ -42,7 +42,7 @@ const legalData = {
             { icon: 'fas fa-envelope', text: 'info@IvánLoraFisio.com' },
             { icon: 'fas fa-clock', text: 'L-V: 8:00 - 20:00' }
         ],
-        copyright: '© 2023 IvánLoraFisio. Todos los derechos reservados.'
+        copyright: '© 2025 IvánLoraFisio. Todos los derechos reservados.'
     }
 };
 
