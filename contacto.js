@@ -331,6 +331,109 @@ function initEvents() {
     });
 }
 
+// Función para cargar el calendario
+function loadCalendar() {
+    const calendar = document.getElementById('calendar');
+    const paymentSection = document.getElementById('paymentSection');
+    const selectedDateSpan = document.getElementById('selectedDate');
+    const payButton = document.getElementById('payButton');
+
+    if (!calendar || !paymentSection || !selectedDateSpan || !payButton) {
+        console.error('Error: No se encontraron los elementos del calendario en el DOM.');
+        return;
+    }
+
+    let selectedDate = null;
+    const reservedDates = new Set();
+
+    const today = new Date();
+    let currentMonth = today.getMonth();
+    let currentYear = today.getFullYear();
+
+    function renderCalendar(month, year) {
+        calendar.innerHTML = '';
+        const firstDay = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        const monthNames = [
+            'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+            'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+        ];
+        const dayNames = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+
+        const header = document.createElement('div');
+        header.className = 'calendar-header';
+        header.innerHTML = `
+            <button id="prevMonth" class="btn">&lt;</button>
+            <span>${monthNames[month]} ${year}</span>
+            <button id="nextMonth" class="btn">&gt;</button>
+        `;
+        calendar.appendChild(header);
+
+        const daysRow = document.createElement('div');
+        daysRow.className = 'calendar-days';
+        dayNames.forEach(day => {
+            const dayElement = document.createElement('div');
+            dayElement.className = 'calendar-day-name';
+            dayElement.textContent = day;
+            daysRow.appendChild(dayElement);
+        });
+        calendar.appendChild(daysRow);
+
+        const datesGrid = document.createElement('div');
+        datesGrid.className = 'calendar-dates';
+        for (let i = 0; i < firstDay; i++) {
+            const emptyCell = document.createElement('div');
+            emptyCell.className = 'calendar-date empty';
+            datesGrid.appendChild(emptyCell);
+        }
+        for (let day = 1; day <= daysInMonth; day++) {
+            const dateCell = document.createElement('div');
+            const dateKey = `${year}-${month + 1}-${day}`;
+            dateCell.className = `calendar-date ${reservedDates.has(dateKey) ? 'reserved' : ''}`;
+            dateCell.textContent = day;
+
+            if (!reservedDates.has(dateKey)) {
+                dateCell.addEventListener('click', () => {
+                    selectedDate = dateKey;
+                    selectedDateSpan.textContent = `${day} de ${monthNames[month]} de ${year}`;
+                    paymentSection.classList.remove('hidden');
+                });
+            }
+            datesGrid.appendChild(dateCell);
+        }
+        calendar.appendChild(datesGrid);
+
+        document.getElementById('prevMonth').addEventListener('click', () => {
+            currentMonth = currentMonth === 0 ? 11 : currentMonth - 1;
+            currentYear = currentMonth === 11 ? currentYear - 1 : currentYear;
+            renderCalendar(currentMonth, currentYear);
+        });
+
+        document.getElementById('nextMonth').addEventListener('click', () => {
+            currentMonth = currentMonth === 11 ? 0 : currentMonth + 1;
+            currentYear = currentMonth === 0 ? currentYear + 1 : currentYear;
+            renderCalendar(currentMonth, currentYear);
+        });
+    }
+
+    payButton.addEventListener('click', () => {
+        if (selectedDate) {
+            reservedDates.add(selectedDate);
+            alert(`Cita confirmada para el ${selectedDate}. Gracias por tu pago.`);
+            paymentSection.classList.add('hidden');
+            renderCalendar(currentMonth, currentYear);
+        }
+    });
+
+    renderCalendar(currentMonth, currentYear);
+}
+
+// Asegurarse de que el calendario se cargue correctamente
+document.addEventListener('DOMContentLoaded', () => {
+    loadCalendar();
+});
+
 // Función principal para cargar todo el contenido
 function loadContactPage() {
     loadHeader();
@@ -341,6 +444,7 @@ function loadContactPage() {
     loadFAQs();
     loadFooter();
     initEvents();
+    loadCalendar();
 }
 
 // Cargar la página cuando el DOM esté listo
