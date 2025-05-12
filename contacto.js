@@ -447,5 +447,27 @@ function loadContactPage() {
     loadCalendar();
 }
 
+
+    payButton.addEventListener('click', () => {
+        if (selectedDate) {
+            //  Redirigir a la página de pago, pasando la fecha como parámetro en la URL
+            window.location.href = `pago.html?date=${selectedDate}`;
+        }
+    });
+
+// ... (Tu código existente de contacto.js)
+
+    payButton.addEventListener('click', () => {
+        if (selectedDate) {
+            reservedDates.add(selectedDate);
+            //  BORRADO: alert(`Cita confirmada para el ${selectedDate}. Gracias por tu pago.`);
+            paymentSection.classList.add('hidden');
+            renderCalendar(currentMonth, currentYear);
+            //  AQUÍ PUEDES AÑADIR LA REDIRECCIÓN A LA PÁGINA DE PAGO SI LO DESEAS
+            //  window.location.href = `pago.html?date=${selectedDate}`; 
+        }
+    });
+
+// ... (El resto de tu código de contacto.js)
 // Cargar la página cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', loadContactPage);

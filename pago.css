@@ -1,0 +1,104 @@
+/* Estilos para la página de pago */
+.payment-page {
+    padding: 2rem 0;
+}
+
+.payment-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+}
+
+.payment-section h1 {
+    color: var(--azul-oscuro);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.payment-section p {
+    color: var(--texto-gris);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.payment-details {
+    margin-top: 2rem;
+}
+
+#paymentSummary {
+    background-color: var(--gris-claro);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+#paymentSummary h3 {
+    color: var(--azul-oscuro);
+    margin-bottom: 0.5rem;
+}
+
+#paymentSummary p {
+    color: var(--texto-gris);
+    margin-bottom: 0.2rem;
+}
+
+#paymentForm .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#paymentForm .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--azul-oscuro);
+    font-weight: 500;
+}
+
+#paymentForm .form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--gris-medio);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transicion);
+}
+
+#paymentForm .form-group input:focus {
+    border-color: var(--azul-turquesa);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(64, 224, 208, 0.2);
+}
+
+#paymentForm button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--azul-turquesa);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+#paymentForm button[type="submit"]:hover {
+    background-color: var(--azul-oscuro);
+}
+
+#paymentMessage {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#paymentMessage.success {
+    background-color: rgba(64, 224, 208, 0.2);
+    color: var(--azul-oscuro);
+}
+
+#paymentMessage.error {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: darkred;
+}

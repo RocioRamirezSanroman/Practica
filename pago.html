@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - IvánLoraFisio</title>
+    <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="pago.css">
+    <link rel="icon" href="Icono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="main-header">
+        </header>
+
+    <main class="payment-page">
+        <section class="payment-section">
+            <div class="container">
+                <h1>Realizar Pago</h1>
+                <p>Por favor, introduce tus detalles de pago para confirmar tu cita.</p>
+
+                <div class="payment-details">
+                    <div id="paymentSummary">
+                        <h3>Resumen de la Cita</h3>
+                        <p>Fecha: <span id="paymentDate"></span></p>
+                        <p>Importe: €25 (50% del total)</p>
+                    </div>
+
+                    <form id="paymentForm">
+                        <div class="form-group">
+                            <label for="cardNumber">Número de Tarjeta</label>
+                            <input type="text" id="cardNumber" name="cardNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiryDate">Fecha de Expiración (MM/AA)</label>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/AA" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Pagar Ahora</button>
+                    </form>
+
+                    <div id="paymentMessage" class="hidden">
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        </footer>
+
+    <script src="js/main.js"></script>
+    <script src="pago.js"></script>
+</body>
+
+</html>
