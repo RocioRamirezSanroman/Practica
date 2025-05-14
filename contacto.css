@@ -1,4 +1,19 @@
 /* Estilos específicos para la página de contacto */
+:root {
+    --rojo-principal: #d42a2a;
+    --rojo-secundario: #ff3333;
+    --negro-oscuro: #000000;
+    --negro-claro: #1a1a1a;
+    --blanco: #ffffff;
+    --gris-oscuro: #333333;
+    --gris-medio: #666666;
+    --texto-blanco: #ffffff;
+    --texto-gris: #e0e0e0;
+    --highlight-color: #d42a2a;
+    --sombra: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --transicion: all 0.3s ease;
+}
+
 .contact-hero {
     height: 50vh;
 }
@@ -13,14 +28,14 @@
 
 .contact-form {
     flex: 1;
-    background-color: var(--blanco);
+    background-color: var(--blanco); /* Manteniendo el fondo blanco */
     padding: 2.5rem;
     border-radius: 15px;
     box-shadow: var(--sombra);
 }
 
 .contact-form h2 {
-    color: var(--azul-oscuro);
+    color: var(--negro-oscuro); /* Cambiando a negro */
     margin-bottom: 1rem;
 }
 
@@ -36,7 +51,7 @@
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--azul-oscuro);
+    color: var(--negro-oscuro); /* Cambiando a negro */
     font-weight: 500;
 }
 
@@ -54,9 +69,9 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: var(--azul-turquesa);
+    border-color: var(--rojo-principal); /* Cambiando a rojo */
     outline: none;
-    box-shadow: 0 0 0 3px rgba(64, 224, 208, 0.2);
+    box-shadow: 0 0 0 3px rgba(212, 42, 42, 0.2); /* Cambiando a rojo */
 }
 
 .form-group textarea {
@@ -78,12 +93,12 @@
 .contact-info {
     flex: 1;
     padding: 2rem;
-    background-color: var(--gris-claro);
+    background-color: var(--negro-claro); /* Cambiando a un tono oscuro similar */
     border-radius: 15px;
 }
 
 .contact-info h2 {
-    color: var(--azul-oscuro);
+    color: var(--blanco); /* Cambiando a blanco */
     margin-bottom: 1.5rem;
 }
 
@@ -105,8 +120,8 @@
 .contact-icon {
     width: 50px;
     height: 50px;
-    background-color: var(--azul-turquesa);
-    color: var(--azul-oscuro);
+    background-color: var(--rojo-principal); /* Cambiando a rojo */
+    color: var(--blanco);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -116,7 +131,7 @@
 }
 
 .contact-text h3 {
-    color: var(--azul-oscuro);
+    color: var(--blanco); /* Cambiando a blanco */
     margin-bottom: 0.3rem;
     font-size: 1.1rem;
 }
@@ -132,7 +147,7 @@
 }
 
 .social-contact h3 {
-    color: var(--azul-oscuro);
+    color: var(--blanco); /* Cambiando a blanco */
     margin-bottom: 1rem;
 }
 
@@ -142,7 +157,7 @@
 
 /* Map Section */
 .map-section {
-    background-color: var(--gris-claro);
+    background-color: var(--negro-claro); /* Cambiando a un tono oscuro similar */
     padding: 3rem 0;
 }
 
@@ -154,7 +169,7 @@
 
 /* Quick Appointment Section */
 .quick-appointment-section {
-    background-color: var(--azul-oscuro);
+    background-color: var(--negro-oscuro); /* Cambiando a negro */
     color: var(--blanco);
     padding: 5rem 0;
 }
@@ -177,7 +192,7 @@
 }
 
 .quick-appointment-content p {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--texto-gris);
     margin-bottom: 2rem;
 }
 
@@ -193,18 +208,18 @@
 }
 
 .appointment-features i {
-    color: var(--azul-turquesa);
+    color: var(--rojo-principal); /* Cambiando a rojo */
     margin-right: 10px;
     font-size: 1.1rem;
 }
 
 .quick-appointment-form {
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     padding: 2rem;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--gris-medio);
 }
 
 .quick-appointment-form label {
@@ -217,20 +232,20 @@
     width: 100%;
     padding: 0.8rem 1rem;
     margin-bottom: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--gris-medio);
+    background-color: rgba(0, 0, 0, 0.1);
     color: var(--blanco);
     border-radius: 8px;
 }
 
 .quick-appointment-form input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--texto-gris);
 }
 
 .quick-appointment-form input:focus {
     outline: none;
-    border-color: var(--azul-turquesa);
-    box-shadow: 0 0 0 3px rgba(64, 224, 208, 0.3);
+    border-color: var(--rojo-principal); /* Cambiando a rojo */
+    box-shadow: 0 0 0 3px rgba(212, 42, 42, 0.3); /* Cambiando a rojo */
 }
 
 /* FAQ Section */
@@ -252,7 +267,7 @@
 
 .faq-question {
     padding: 1.5rem;
-    background-color: var(--gris-claro);
+    background-color: var(--negro-claro); /* Cambiando a un tono oscuro similar */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -261,11 +276,11 @@
 }
 
 .faq-question:hover {
-    background-color: var(--gris-medio);
+    background-color: var(--gris-oscuro);
 }
 
 .faq-question h3 {
-    color: var(--azul-oscuro);
+    color: var(--blanco); /* Cambiando a blanco */
     font-size: 1.1rem;
     margin: 0;
 }
@@ -295,32 +310,35 @@
 
 .calendar-header {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center;
     align-items: center;
-    gap: 1rem; /* Add spacing between the arrows and the month/year text */
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
 .calendar-header button {
-    background-color: var(--gris-claro);
+    background-color: var(--gris-oscuro); /* Cambiando a un tono oscuro similar */
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: var(--transicion);
+    color: var(--blanco);
 }
 
 .calendar-header button:hover {
-    background-color: var(--azul-turquesa);
+    background-color: var(--rojo-principal); /* Cambiando a rojo */
     color: var(--blanco);
 }
 
 .calendar-header span {
     font-size: 1.2rem;
     font-weight: bold;
+    color: var(--blanco); /* Cambiando a blanco */
 }
 
-.calendar-days, .calendar-dates {
+.calendar-days,
+.calendar-dates {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 0.3rem;
@@ -328,7 +346,8 @@
     margin: 0 auto;
 }
 
-.calendar-day-name, .calendar-date {
+.calendar-day-name,
+.calendar-date {
     padding: 0.5rem;
     text-align: center;
     border-radius: 5px;
@@ -337,18 +356,20 @@
 
 .calendar-day-name {
     font-weight: bold;
-    background-color: var(--gris-claro);
+    background-color: var(--gris-oscuro); /* Cambiando a un tono oscuro similar */
+    color: var(--blanco); /* Cambiando a blanco */
 }
 
 .calendar-date {
     cursor: pointer;
-    background-color: var(--blanco);
+    background-color: var(--negro-claro); /* Cambiando a un tono oscuro similar */
     border: 1px solid var(--gris-medio);
     transition: var(--transicion);
+    color: var(--blanco); /* Cambiando a blanco */
 }
 
 .calendar-date:hover {
-    background-color: var(--azul-turquesa);
+    background-color: var(--rojo-principal); /* Cambiando a rojo */
     color: var(--blanco);
 }
 
@@ -365,6 +386,7 @@
 #paymentSection {
     margin-top: 1.5rem;
     text-align: left;
+    color: var(--blanco); /* Cambiando a blanco */
 }
 
 #payButton {
@@ -377,11 +399,11 @@
     .contact-container {
         flex-direction: column;
     }
-    
+
     .quick-appointment {
         flex-direction: column;
     }
-    
+
     .quick-appointment-form {
         width: 100%;
     }
@@ -392,11 +414,11 @@
     .contact-info {
         padding: 1.5rem;
     }
-    
+
     .faq-question {
         padding: 1rem;
     }
-    
+
     .faq-question h3 {
         font-size: 1rem;
     }
@@ -407,14 +429,15 @@
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .contact-icon {
         width: 40px;
         height: 40px;
         font-size: 1rem;
     }
 
-    .calendar-days, .calendar-dates {
+    .calendar-days,
+    .calendar-dates {
         max-width: 100%;
     }
 }
