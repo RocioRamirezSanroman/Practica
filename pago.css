@@ -6,7 +6,7 @@
 .payment-section {
     max-width: 600px;
     margin: 0 auto;
-    background-color: var(--blanco);
+    background-color:black;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--sombra);
@@ -74,8 +74,8 @@
 #paymentForm button[type="submit"] {
     width: 100%;
     padding: 1rem;
-    background-color: var(--azul-turquesa);
-    color: var(--blanco);
+    background-color:black;
+    color:rgb(255, 255, 255) ;
     border: none;
     border-radius: 8px;
     cursor: pointer;
