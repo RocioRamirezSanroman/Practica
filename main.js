@@ -30,15 +30,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Cambiar header al hacer scroll
     window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) {
-            header.style.background = 'rgba(26, 58, 95, 0.95)';
-            header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
-        } else {
-            header.style.background = 'rgba(26, 58, 95, 0.9)';
-            header.style.boxShadow = 'none';
-        }
-    });
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.style.background = 'rgba(26, 26, 26, 0.95)'; // ¡Esta es la línea que lo pone azul!
+        header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
+    } else {
+        header.style.background = 'rgba(26, 26, 26, 0.95)'; // Este es el color oscuro por defecto
+        header.style.boxShadow = 'none';
+    }
+});
     
     // Activar animaciones cuando el elemento es visible
     window.addEventListener('scroll', animateOnScroll);
