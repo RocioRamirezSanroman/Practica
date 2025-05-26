@@ -28,17 +28,17 @@
     padding: 2.5rem;
     border-radius: 15px;
     box-shadow: var(--sombra);
-    border-left: 4px solid var(--rojo-principal); /* Cambiado a rojo */
+    border-left: 4px solid var(--rojo-principal); 
 }
 
 .legal-section h2 {
-    color: var(--negro-oscuro); /* Cambiado a negro */
+    color: var(--negro-oscuro); 
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
 
 .legal-section h3 {
-    color: var(--negro-oscuro); /* Cambiado a negro */
+    color: var(--negro-oscuro);
     margin: 2rem 0 1rem;
     font-size: 1.3rem;
 }
@@ -95,21 +95,21 @@
 }
 
 .cookies-table th {
-    background-color: var(--gris-oscuro); /* Cambiado a gris oscuro */
+    background-color: var(--gris-oscuro); 
     color: var(--blanco);
     font-weight: 500;
 }
 
 .cookies-table tr:nth-child(even) {
-    background-color: var(--blanco); /* Mantenido en blanco */
+    background-color: var(--blanco);
 }
 
 .cookies-table tr:hover {
-    background-color: rgba(212, 42, 42, 0.1); /* Cambiado a rojo con transparencia */
+    background-color: rgba(212, 42, 42, 0.1); 
 }
 
 .cookies-table a {
-    color: var(--rojo-principal); /* Cambiado a rojo */
+    color: var(--rojo-principal); 
     text-decoration: none;
     transition: var(--transicion);
 }

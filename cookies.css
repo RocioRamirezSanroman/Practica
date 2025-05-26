@@ -28,17 +28,17 @@
     padding: 2.5rem;
     border-radius: 15px;
     box-shadow: var(--sombra);
-    border-left: 4px solid var(--rojo-principal); /* Cambiado a rojo */
+    border-left: 4px solid var(--rojo-principal);
 }
 
 .legal-section h2 {
-    color: var(--negro-oscuro); /* Cambiado a negro */
+    color: var(--negro-oscuro); 
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
 
 .legal-section h3 {
-    color: var(--negro-oscuro); /* Cambiado a negro */
+    color: var(--negro-oscuro); 
     margin: 2rem 0 1rem;
     font-size: 1.3rem;
 }
