@@ -1,16 +1,12 @@
 /* Estilos generales mejorados */
 :root {
-    --rojo-principal: #d42a2a;
-    --rojo-secundario: #ff3333;
-    --negro-oscuro: #000000;
-    --negro-claro: #1a1a1a;
-    --blanco: #ffffff;
-    --gris-oscuro: #333333;
-    --gris-medio: #666666;
-    --texto-blanco: #ffffff;
-    --texto-gris: #e0e0e0;
-    --highlight-color: #d42a2a;
-    --sombra: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --rojo-principal: #d42a2a; /* El rojo vibrante de tu imagen */
+    --negro-fondo-principal: #1a1a1a; /* El negro profundo de tu imagen de fondo */
+    --negro-tarjeta-fondo: #2b2b2b; /* Negro ligeramente más claro para los fondos de las tarjetas */
+    --gris-texto-claro: #c4c4c4; /* El gris claro para el texto en los párrafos */
+    --blanco-elementos: #ffffff; /* Para elementos que deben ser puramente blancos */
+    --gris-tarjeta-borde: #444444; /* Un gris oscuro para los bordes de las tarjetas */
+    --sombra: 0 5px 15px rgba(0, 0, 0, 0.1);
     --transicion: all 0.3s ease;
 }
 
@@ -22,15 +18,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: var(--texto-blanco);
+    color: var(--gris-texto-claro); /* Color de texto predeterminado */
     line-height: 1.6;
     overflow-x: hidden;
-    background-color: var(--negro-oscuro);
+    background-color: var(--negro-fondo-principal); /* Color de fondo principal */
 }
 
 /* Header mejorado */
 header {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(26, 26, 26, 0.95); /* Versión semi-transparente del fondo principal */
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     position: fixed;
@@ -38,7 +34,7 @@ header {
     top: 0;
     z-index: 1000;
     transition: var(--transicion);
-    border-bottom: 1px solid var(--rojo-principal);
+    object-fit: cover;
 }
 
 .header-container {
@@ -55,7 +51,7 @@ header {
     align-items: center;
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--blanco);
+    color: var(--blanco-elementos);
 }
 
 .logo i {
@@ -75,7 +71,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--blanco);
+    color: var(--blanco-elementos);
     font-weight: 500;
     transition: var(--transicion);
     position: relative;
@@ -87,7 +83,7 @@ nav ul li a:hover {
 
 .btn-nav {
     background-color: var(--rojo-principal);
-    color: var(--blanco);
+    color: var(--blanco-elementos);
     padding: 0.6rem 1.5rem;
     border-radius: 50px;
     font-weight: 600;
@@ -95,8 +91,7 @@ nav ul li a:hover {
 }
 
 .btn-nav:hover {
-    background-color: var(--blanco);
-    color: var(--negro-oscuro);
+    background-color: var(--rojo-principal); /* Se mantiene rojo al pasar el ratón */
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(212, 42, 42, 0.4);
 }
@@ -107,11 +102,10 @@ nav ul li a:hover {
     height: 60vh;
     display: flex;
     align-items: center;
-    color: var(--blanco);
+    color: var(--blanco-elementos);
     margin-top: 0;
     overflow: hidden;
-    background-color: var(--negro-claro);
-    border-bottom: 2px solid var(--rojo-principal);
+    background-color: var(--negro-fondo-principal);
 }
 
 .hero-content {
@@ -128,7 +122,7 @@ nav ul li a:hover {
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .highlight {
@@ -144,7 +138,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 10px;
-    background-color: rgba(212, 42, 42, 0.3);
+    background-color: rgba(212, 42, 42, 0.3); /* Subrayado rojo transparente */
     z-index: -1;
 }
 
@@ -152,7 +146,8 @@ nav ul li a:hover {
     font-size: 1.5rem;
     max-width: 700px;
     margin: 0 auto 2.5rem;
-    color: var(--texto-gris);
+    color: var(--gris-texto-claro);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
@@ -173,7 +168,7 @@ nav ul li a:hover {
 
 .btn-primary {
     background-color: var(--rojo-principal);
-    color: var(--blanco);
+    color: var(--blanco-elementos);
     box-shadow: 0 5px 15px rgba(212, 42, 42, 0.4);
 }
 
@@ -184,20 +179,44 @@ nav ul li a:hover {
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--blanco);
-    border: 2px solid var(--blanco);
+    color: var(--blanco-elementos);
+    border: 2px solid var(--blanco-elementos);
 }
 
 .btn-secondary:hover {
-    background-color: var(--blanco);
-    color: var(--negro-oscuro);
+    background-color: var(--blanco-elementos);
+    color: var(--negro-fondo-principal);
     transform: translateY(-5px);
 }
 
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Línea divisoria roja */
+.red-divider-line {
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: var(--rojo-principal); /* Color rojo */
+    margin: 0 auto; /* Centrar la línea */
+    max-width: 1200px; /* Ancho máximo similar al contenido */
+}
+
+
 /* Sección de Beneficios */
 .benefits {
+    margin: 7%;
     padding: 6rem 0;
-    background-color: var(--negro-claro);
+    background-color: var(--negro-fondo-principal); /* Consistente con el fondo del hero */
+}
+
+.values-grid{
+    margin: 7%;
+    padding-bottom: 7%;
 }
 
 .section-header {
@@ -207,7 +226,7 @@ nav ul li a:hover {
 
 .section-header h2 {
     font-size: 2.5rem;
-    color: var(--blanco);
+    color: var(--blanco-elementos);
     margin-bottom: 1rem;
     position: relative;
     display: inline-block;
@@ -225,7 +244,7 @@ nav ul li a:hover {
 }
 
 .section-header p {
-    color: var(--texto-gris);
+    color: var(--gris-texto-claro);
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto;
@@ -240,7 +259,7 @@ nav ul li a:hover {
 }
 
 .benefit-card {
-    background-color: var(--gris-oscuro);
+    background-color: var(--negro-tarjeta-fondo); /* Negro ligeramente más claro para las tarjetas */
     border-radius: 10px;
     padding: 2.5rem 2rem;
     text-align: center;
@@ -248,7 +267,7 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    border: 1px solid var(--rojo-principal);
+    border: 1px solid var(--gris-tarjeta-borde); /* Borde para diferenciar */
 }
 
 .benefit-card::before {
@@ -269,13 +288,13 @@ nav ul li a:hover {
 
 .benefit-card:hover::before {
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.1; /* Superposición sutil al pasar el ratón */
 }
 
 .benefit-icon {
     width: 80px;
     height: 80px;
-    background-color: rgba(212, 42, 42, 0.1);
+    background-color: rgba(212, 42, 42, 0.1); /* Fondo de icono rojo transparente */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -284,33 +303,137 @@ nav ul li a:hover {
     color: var(--rojo-principal);
     font-size: 2rem;
     transition: var(--transicion);
-    border: 1px solid var(--rojo-principal);
 }
 
 .benefit-card:hover .benefit-icon {
     background-color: var(--rojo-principal);
-    color: var(--blanco);
+    color: var(--blanco-elementos);
 }
 
 .benefit-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--blanco);
+    color: var(--blanco-elementos); /* Blanco para los títulos de las tarjetas */
     position: relative;
     z-index: 2;
 }
 
 .benefit-card p {
-    color: var(--texto-gris);
+    color: var(--gris-texto-claro);
     position: relative;
     z-index: 2;
 }
 
+/* --- Servicios --- */
+.servicios {
+    padding: 5rem 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--negro-fondo-principal); /* Asegurar un fondo consistente */
+}
+
+.service-details{
+    margin: 7%;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.titulo-seccion h2 {
+    font-size: 2.5rem;
+    color: var(--blanco-elementos); /* Blanco para el título de la sección */
+    margin-bottom: 1rem;
+}
+
+.titulo-seccion h1 { /* Este H1 no se usa explícitamente en servicios.html para esta sección, lo mantengo por robustez */
+    font-size: 2.5rem;
+    color: var(--gris-texto-claro);
+    margin-bottom: 1rem;
+}
+
+.titulo-seccion p {
+    color: var(--gris-texto-claro); /* Gris claro para la descripción de la sección */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Styles for "Tratamientos Especializados" cards */
+.service-card {
+    background-color: var(--negro-tarjeta-fondo); /* Negro ligeramente más claro para los fondos de las tarjetas */
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+    border: 1px solid var(--gris-tarjeta-borde); /* Color de borde específico para estas tarjetas */
+    color: var(--gris-texto-claro);
+}
+
+.service-card .service-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Esquinas ligeramente redondeadas para las imágenes */
+}
+
+.service-card h3 {
+    color: var(--blanco-elementos); /* Blanco para los títulos dentro de estas tarjetas */
+}
+
+.service-card p {
+    color: var(--gris-texto-claso); /* Gris claro para el texto dentro de estas tarjetas */
+}
+
+
+/* Styles for "Podología profesional" cards (tarjeta-servicio) */
+.tarjeta-servicio {
+    background: var(--negro-tarjeta-fondo); /* Negro ligeramente más claro para los fondos de las tarjetas */
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    aspect-ratio: 1 / 1; /* Clave para hacerlas cuadradas */
+    border: 1px solid var(--gris-tarjeta-borde); /* Color de borde específico para estas tarjetas */
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta-servicio i {
+    font-size: 2.5rem;
+    color: var(--rojo-principal); /* Icono rojo */
+    margin-bottom: 1.5rem;
+}
+
+.tarjeta-servicio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--blanco-elementos); /* Blanco para los títulos de las tarjetas */
+}
+
+.tarjeta-servicio p {
+    color: var(--gris-texto-claro); /* Gris claro para las descripciones de las tarjetas */
+}
+
+
 /* Sección CTA */
 .cta-section {
     padding: 6rem 0;
-    background: linear-gradient(135deg, var(--negro-oscuro), var(--rojo-principal));
-    color: var(--blanco);
+    background: linear-gradient(135deg, var(--negro-fondo-principal), var(--rojo-principal)); /* Degradado de negro a rojo */
+    color: var(--blanco-elementos);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -323,7 +446,7 @@ nav ul li a:hover {
     right: -50px;
     width: 200px;
     height: 200px;
-    background-color: rgba(212, 42, 42, 0.1);
+    background-color: rgba(212, 42, 42, 0.1); /* Círculos rojos transparentes */
     border-radius: 50%;
 }
 
@@ -334,7 +457,7 @@ nav ul li a:hover {
     left: -80px;
     width: 300px;
     height: 300px;
-    background-color: rgba(212, 42, 42, 0.1);
+    background-color: rgba(212, 42, 42, 0.1); /* Círculos rojos transparentes */
     border-radius: 50%;
 }
 
@@ -348,12 +471,14 @@ nav ul li a:hover {
 .cta-section h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: var(--blanco-elementos);
 }
 
 .cta-section p {
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
     opacity: 0.9;
+    color: var(--blanco-elementos);
 }
 
 .btn-large {
@@ -363,10 +488,9 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: var(--negro-oscuro);
-    color: var(--blanco);
+    background-color: var(--negro-fondo-principal);
+    color: var(--blanco-elementos);
     padding: 5rem 0 0;
-    border-top: 2px solid var(--rojo-principal);
 }
 
 .footer-content {
@@ -386,13 +510,14 @@ footer {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     display: inline-flex;
+    color: var(--blanco-elementos);
 }
 
 .footer-section p {
     margin-bottom: 1.5rem;
     opacity: 0.8;
     line-height: 1.7;
-    color: var(--texto-gris);
+    color: var(--gris-texto-claro);
 }
 
 .social-icons {
@@ -406,15 +531,15 @@ footer {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(212, 42, 42, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    color: var(--blanco);
+    color: var(--blanco-elementos);
     transition: var(--transicion);
 }
 
 .social-icons a:hover {
     background-color: var(--rojo-principal);
-    color: var(--blanco);
+    color: var(--negro-fondo-principal);
     transform: translateY(-3px);
 }
 
@@ -423,7 +548,7 @@ footer {
     margin-bottom: 1.5rem;
     position: relative;
     padding-bottom: 10px;
-    color: var(--blanco);
+    color: var(--blanco-elementos);
 }
 
 .footer-section h3::after {
@@ -445,7 +570,7 @@ footer {
 }
 
 .footer-section.links a {
-    color: var(--texto-gris);
+    color: var(--gris-texto-claro);
     opacity: 0.8;
     transition: var(--transicion);
     display: block;
@@ -461,15 +586,36 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    color: var(--texto-gris);
 }
 
-.footer-section.contact i {
+.detalle-contacto {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.detalle-contacto i {
     margin-right: 10px;
     color: var(--rojo-principal);
     width: 20px;
     text-align: center;
+    flex-shrink: 0;
+    margin-top: 5px;
 }
+
+.detalle-contacto p {
+    margin: 0;
+    opacity: 1;
+    line-height: 1.5;
+    color: var(--gris-texto-claro);
+}
+
+.detalle-contacto h4 {
+    margin-bottom: 0.2rem;
+    color: var(--blanco-elementos);
+    font-size: 1.1rem;
+}
+
 
 .copyright {
     text-align: center;
@@ -478,21 +624,35 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
     opacity: 0.7;
-    color: var(--texto-gris);
+    color: var(--gris-texto-claro);
 }
+
+/* Efectos de Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate {
+    animation: fadeIn 1s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
 
 /* Responsive Design */
 @media (max-width: 992px) {
     .hero h1 {
         font-size: 2.8rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
-    
+
     .btn {
         width: 80%;
         max-width: 300px;
@@ -504,23 +664,38 @@ footer {
         flex-direction: column;
         padding: 1rem;
     }
-    
+
     nav ul {
         margin-top: 1rem;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     nav ul li {
         margin: 0.5rem;
     }
-    
+
     .hero h1 {
         font-size: 2.2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
+    }
+
+    .stat-item {
+        min-width: 120px;
+        padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* Responsive adjustments for .tarjeta-servicio if they become too small on mobile */
+    .tarjeta-servicio {
+        aspect-ratio: auto; /* Quitar relación de aspecto en pantallas pequeñas si se vuelven demasiado altas */
+        height: auto; /* Permitir que la altura se ajuste naturalmente */
     }
 }
 
@@ -529,15 +704,19 @@ footer {
         height: auto;
         padding: 8rem 0 4rem;
     }
-    
+
     .hero h1 {
         font-size: 1.8rem;
     }
-    
+
     .section-header h2 {
         font-size: 2rem;
     }
-    
+
+    .testimonial-card {
+        padding: 2rem 1.5rem;
+    }
+
     .cta-section h2 {
         font-size: 2rem;
     }
